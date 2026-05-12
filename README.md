@@ -21,7 +21,7 @@ This project completes the Practice 10 requirements:
    - ID: `dockerhub-credentials`
    - Username: your Docker Hub username
    - Password: your Docker Hub access token or password
-4. Run the Jenkins job. The `DOCKERHUB_USERNAME` parameter defaults to `yyyyyysaqqqq`; change it only if your Docker Hub username is different.
+4. Run the Jenkins job. The image repository username is read from the `dockerhub-credentials` Jenkins credential.
 
 ## Expected Result
 

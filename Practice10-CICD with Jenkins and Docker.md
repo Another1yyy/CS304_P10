@@ -25,9 +25,9 @@ Add a Jenkins credential:
 - Username: Docker Hub username
 - Password: Docker Hub access token or password
 
-When running the pipeline, set:
+The pipeline uses the username stored in:
 
-- `DOCKERHUB_USERNAME`: `yyyyyysaqqqq`
+- Jenkins credential ID: `dockerhub-credentials`
 
 ## Expected Jenkins Result
 
