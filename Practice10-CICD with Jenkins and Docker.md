@@ -27,7 +27,7 @@ Add a Jenkins credential:
 
 When running the pipeline, set:
 
-- `DOCKERHUB_USERNAME`: Docker Hub username
+- `DOCKERHUB_USERNAME`: `Another1yyy`
 
 ## Expected Jenkins Result
 
@@ -43,7 +43,7 @@ The Jenkins pipeline has these stages:
 Repository:
 
 ```text
-https://hub.docker.com/r/<your-dockerhub-username>/cs304-practice10
+https://hub.docker.com/r/Another1yyy/cs304-practice10
 ```
 
 ## Running Containers

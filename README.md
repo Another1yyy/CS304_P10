@@ -10,7 +10,7 @@ This project completes the Practice 10 requirements:
 
 - `index.html`: Demo web page served by nginx.
 - `Dockerfile`: Builds the Docker image.
-- `Jenkinsfile`: Jenkins Pipeline for build, push, and deployment.
+- `Jenkinsfile`: Windows Jenkins Pipeline for build, push, and deployment.
 
 ## Jenkins Setup
 
@@ -21,13 +21,13 @@ This project completes the Practice 10 requirements:
    - ID: `dockerhub-credentials`
    - Username: your Docker Hub username
    - Password: your Docker Hub access token or password
-4. Run the Jenkins job and set the `DOCKERHUB_USERNAME` parameter to your Docker Hub username.
+4. Run the Jenkins job. The `DOCKERHUB_USERNAME` parameter defaults to `Another1yyy`; change it only if your Docker Hub username is different.
 
 ## Expected Result
 
 After the pipeline succeeds:
 
-- Docker Hub contains the image repository: `<your-dockerhub-username>/cs304-practice10`
+- Docker Hub contains the image repository: `Another1yyy/cs304-practice10`
 - Three containers are running:
   - `http://localhost:8082`
   - `http://localhost:8083`
