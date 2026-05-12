@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS304 Practice 10</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #f5f7fb;
+        color: #172033;
+      }
+
+      main {
+        width: min(720px, calc(100% - 32px));
+        padding: 36px;
+        border: 1px solid #d8deea;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 20px 45px rgba(23, 32, 51, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 32px;
+      }
+
+      p {
+        margin: 8px 0;
+        line-height: 1.6;
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: #e9f8ef;
+        color: #146c36;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CS304 Practice 10</h1>
+      <p>This page is served from a Docker image built by Jenkins.</p>
+      <p>The Jenkins pipeline also pushes the image to Docker Hub and runs three containers on ports 8082, 8083, and 8084.</p>
+      <span class="status">CI/CD deployment ready</span>
+    </main>
+  </body>
+</html>
