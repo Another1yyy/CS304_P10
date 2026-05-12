@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'DOCKERHUB_USERNAME', defaultValue: 'Another1yyy', description: 'Docker Hub username used for the image repository.')
+        string(name: 'DOCKERHUB_USERNAME', defaultValue: 'yyyyyysaqqqq', description: 'Docker Hub username used for the image repository.')
     }
 
     environment {
