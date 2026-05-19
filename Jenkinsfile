@@ -30,8 +30,6 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: env.DOCKERHUB_CREDENTIALS, usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     bat '''
-                        echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
-                        if errorlevel 1 exit /b 1
                         docker push %DOCKER_USER%/%IMAGE_REPOSITORY%:%BUILD_NUMBER%
                         if errorlevel 1 exit /b 1
                         docker push %DOCKER_USER%/%IMAGE_REPOSITORY%:latest
@@ -58,7 +56,7 @@ pipeline {
 
     post {
         always {
-            bat 'docker logout || exit /b 0'
+            bat 'docker ps --filter "name=cs304-practice10" || exit /b 0'
         }
     }
 }
